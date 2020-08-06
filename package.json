@@ -20,7 +20,7 @@
     "postbuild": "mv build temp-build && mkdir build && mv temp-build build && mv build/temp-build build/react-demo",
     "start": "react-scripts start",
     "eject": "react-scripts eject",
-   " predeploy":"npm build",
+   " predeploy":"yarn build",
    "deploy":"gh-pages -d build"
 
   },

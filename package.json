@@ -2,6 +2,7 @@
   "name": "react-demo",
   "version": "0.1.0",
   "private": true,
+  "homepage1":"https://shehvwar.github.io/demo/.",
   "dependencies": {
     "@daily-co/daily-js": "^0.9.986",
     "@testing-library/jest-dom": "^4.2.4",
@@ -18,7 +19,10 @@
     "build": "react-scripts build",
     "postbuild": "mv build temp-build && mkdir build && mv temp-build build && mv build/temp-build build/react-demo",
     "start": "react-scripts start",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+   " predeploy":"npm build",
+   "deploy":"gh-pages -d build"
+
   },
   "homepage": "react-demo",
   "eslintConfig": {
